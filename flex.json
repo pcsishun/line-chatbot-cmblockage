@@ -1,0 +1,47 @@
+{
+    "type":"bubble",
+    "direction":"ltr",
+    "header":{
+       "type":"box",
+       "layout":"vertical",
+       "backgroundColor":"#007BFFFF",
+       "contents":[
+          {
+             "type":"text",
+             "text":"ขอ้ มูลส ่งกีดขวำง",
+             "size":"xl",
+             "color":"#FFFFFFFF",
+             "align":"center",
+             "contents":[
+                
+             ]
+          },
+          {
+             "type":"text",
+             "text":" อ ำเภอ xxxx",
+             "weight":"bold",
+             "size":"md",
+             "color":"#FFFFFFFF",
+             "align":"center",
+             "gravity":"bottom",
+             "contents":[
+                
+             ]
+          }
+       ]
+    },
+    "body":{
+       "type":"box",
+       "layout":"vertical",
+       "contents":[
+          {
+             "type":"button",
+             "action":{
+                "type":"uri",
+                "label":"PDF File",
+                "uri":"https://cmblockage.cmfightflood.com/reports/solution/pdf?amp=ฝำง&tumbol=sum"
+             }
+          }
+       ]
+    }
+ }

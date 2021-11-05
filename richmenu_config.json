@@ -1,0 +1,59 @@
+{
+    "size": {
+      "width": 2500,
+      "height": 1686
+    },
+    "selected": true,
+    "name": "Rich Menu 1",
+    "chatBarText": "เมนู",
+    "areas": [
+      {
+        "bounds": {
+          "x": 181,
+          "y": 130,
+          "width": 559,
+          "height": 544
+        },
+        "action": {
+          "type": "uri",
+          "uri": "https://cmblockage.cmfightflood.com/"
+        }
+      },
+      {
+        "bounds": {
+          "x": 961,
+          "y": 130,
+          "width": 591,
+          "height": 550
+        },
+        "action": {
+          "type": "message",
+          "text": "แบบสำรวจสิ่งกีดขวาง"
+        }
+      },
+      {
+        "bounds": {
+          "x": 1730,
+          "y": 128,
+          "width": 589,
+          "height": 563
+        },
+        "action": {
+          "type": "message",
+          "text": "ข้อมูลสิ่งกีดขวาง"
+        }
+      },
+      {
+        "bounds": {
+          "x": 1709,
+          "y": 876,
+          "width": 608,
+          "height": 557
+        },
+        "action": {
+          "type": "uri",
+          "uri": "https://www.facebook.com/CENDiMcmu"
+        }
+      }
+    ]
+  }

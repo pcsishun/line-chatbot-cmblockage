@@ -12,8 +12,8 @@ import CarouselTemplateSelection as CT
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY')
 
-
-
+# Line Channel access token  
+# # Line Channel access token NIAN EARTH
 line_bot_api = LineBotApi('')
 handler = WebhookHandler('')  # Line Channel secret
 
@@ -447,7 +447,7 @@ def responseText(replytoken, text_re):
         line_bot_api.reply_message(replytoken, flexReply)
 
     elif text_re == "สิ่งกีดขวางใกล้ฉัน":
-        text_message = TextSendMessage(text='โปรดส่งโลเคชั่นของคุณมาให้เราค่ะ')
+        text_message = TextSendMessage(text='โปรดส่งโลเคชั่นของคุณมาให้เราค่ะ หมายเหคุ กด + เลือก Location แล้วกด Share')
         line_bot_api.reply_message(replytoken, text_message)
 
     elif text_re == "เลือกสถานที่":

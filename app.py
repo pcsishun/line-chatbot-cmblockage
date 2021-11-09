@@ -12,8 +12,9 @@ import CarouselTemplateSelection as CT
 app = Flask(__name__)
 app.secret_key = os.environ.get('SECRET_KEY')
 
-# Line Channel access token  
-# # Line Channel access token NIAN EARTH
+ 
+
+# # Line Channel access token  
 line_bot_api = LineBotApi('')
 handler = WebhookHandler('')  # Line Channel secret
 
@@ -465,18 +466,7 @@ def responseText(replytoken, text_re):
         text_message = TextSendMessage(text='โปรดส่ง {} ที่ท่านต้องการมาให้เราค่ะ'.format(text_re))
         line_bot_api.reply_message(replytoken, text_message)
  
-    # elif text_re == "Facebook":
-    #     text_message = TextSendMessage('https://www.facebook.com/CENDiMcmu')
-    #     line_bot_api.reply_message(replytoken, text_message)
-
-    # elif text_re == "website":
-    #     text_message = TextSendMessage('https://cendim.eng.cmu.ac.th/')
-    #     line_bot_api.reply_message(replytoken, text_message)
-
-    # elif text_re == "ที่อยู่":
-    #     text_message = TextSendMessage("ติดต่อเรา\nคณะวิศวกรรมศาสตร์ มหาวิทยาลัยเชียงใหม่ 239 ถนนห้วยแก้ว ตำบลสุเทพ อำเภอเมือง จังหวัดเชียงใหม่ 50200\nโทร : 053942010 , 053944156\nEmail : cendim@eng.cmu.ac.th")
-    #     line_bot_api.reply_message(replytoken, text_message)
-
+ 
 
 def menu_card(replytoken):
 
@@ -484,7 +474,7 @@ def menu_card(replytoken):
     # print("This function is menu card")
 
     ##### คำสั่งสร้าง Card #####
-    # ## เพิ่ม card ตรงนี้
+    # ## เพิ่ม card ตรงนี้  
 
     carousel_template_message = TemplateSendMessage(
         alt_text='Carousel template',
@@ -493,7 +483,7 @@ def menu_card(replytoken):
             
                 ## 1) ข้อมูลสิ่งกีดขวางทางน้ำ ในจังหวัดเชียงใหม่ 
                 CarouselColumn(
-                    thumbnail_image_url='https://cmblockage.cmfightflood.com/images/linebot/blockage_box1.png?fbclid=IwAR2YaG8CkW_OrBwgMNPE8KrxupZF5IMWxgNcZfog4GV4RneZdjgcYSzBdSY',
+                    thumbnail_image_url='https://cmblockage.cmfightflood.com/images/linebot/blockage_box2.png?fbclid=IwAR2EIFMwuXKWyolCWRm1FUlSFx5zViH5Ci5ZG2cdk2V4u3nrU9AzFl28bt8',
                     title='ข้อมูลสิ่งกีดขวางทางน้ำในจังหวัดเชียงใหม่',
                     text='โปรดเลือกหัวข้อดังนี้', 
                     actions=[
@@ -514,7 +504,7 @@ def menu_card(replytoken):
                 ),
                 ### 2) สำรวจสิ่งกีดขวางทางน้ำเพิ่มเติม
                 CarouselColumn(
-                    thumbnail_image_url='https://cmblockage.cmfightflood.com/images/linebot/blockage_box2.png?fbclid=IwAR2EIFMwuXKWyolCWRm1FUlSFx5zViH5Ci5ZG2cdk2V4u3nrU9AzFl28bt8',
+                    thumbnail_image_url='https://cmblockage.cmfightflood.com/images/linebot/blockage_box1.png?fbclid=IwAR2YaG8CkW_OrBwgMNPE8KrxupZF5IMWxgNcZfog4GV4RneZdjgcYSzBdSY',
                     title='สำรวจสิ่งกีดขวางทางน้ำเพิ่มเติม',
                     text='โปรดเลือกหัวข้อดังนี้',
                     actions=[
@@ -534,7 +524,7 @@ def menu_card(replytoken):
                 ),
                 ### 3)  ข้อมูลสนับสนุน (IDF, รูปแบบสิ่งกีดขวาง Pattern ต่าง ๆ)
                 CarouselColumn(
-                    thumbnail_image_url='https://cmblockage.cmfightflood.com/images/linebot/blockage_box2.png?fbclid=IwAR2EIFMwuXKWyolCWRm1FUlSFx5zViH5Ci5ZG2cdk2V4u3nrU9AzFl28bt8',
+                    thumbnail_image_url='https://cmblockage.cmfightflood.com/images/linebot/blockage_box3.png?fbclid=IwAR13km7PMk7E7ZcSB_W6ygkJE6q1BvaeMKocr3OZZdI_UWkHMswQ5E8oNd4',
                     title='สำรวจสิ่งกีดขวางทางน้ำเพิ่มเติม',
                     text='โปรดเลือกหัวข้อดังนี้',
                     actions=[
